@@ -35,20 +35,20 @@ try:
     obj = untangle.parse(url)
 except Exception:
     print("This video does not contain captions provided by google.")
-    print("Following service provided by IBM Watson")
+    #print("Following service provided by IBM Watson")
     #use ibm watson here
-    import youtube_dl
+    #import youtube_dl
 
-    options = {
-    'format': 'bestaudio/best', # choice of quality
-    'extractaudio' : True,      # only keep the audio
-    'audioformat' : "wav",      # convert to mp3
-    'outtmpl': 'rawaudio.wav',        # name the file the ID of the video
-    'noplaylist' : True,        # only download single song, not playlist
-    }
-    with youtube_dl.YoutubeDL(options) as ydl:
-        ydl.download([orig])
-    print("File audio extracted")
+    #options = {
+    #'format': 'bestaudio/best', # choice of quality
+    #'extractaudio' : True,      # only keep the audio
+    #'audioformat' : "wav",      # convert to mp3
+    #'outtmpl': 'rawaudio.wav',        # name the file the ID of the video
+    #'noplaylist' : True,        # only download single song, not playlist
+    #}
+    #with youtube_dl.YoutubeDL(options) as ydl:
+    #ydl.download([orig])
+    #print("File audio extracted")
     # import json
     # from os.path import join, dirname
     # from watson_developer_cloud import SpeechToTextV1
